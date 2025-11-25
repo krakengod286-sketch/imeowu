@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pixel-body crt-screen page-shake">
+
+<div class="pixel-container fade-in">
+
+  <h1 class="pixel-title rainbow-text rainbow-glow">To My Dearest,</h1>
+
+  <p id="letter-typing" class="letter-text"></p>
+
+  <script>
+    const letterText =
+    "My, Dear, I just want to tell you something that sits at the very center of who I am. I love you. I love you with a depth that’s hard to put into words, and every day I’m grateful that I get to share my life with you...\n\n" +
+    "I want you to always know that I’m here for you... \n\n" +
+    "You’re my partner, my safe place, I love you so much99999x, please always remember this MWAAAAH!";
+
+    let j = 0;
+
+    function typeLetter() {
+      if (j < letterText.length) {
+        document.getElementById('letter-typing').innerHTML += letterText.charAt(j);
+        j++;
+        setTimeout(typeLetter, 35);
+      }
+    }
+    typeLetter();
+  </script>
+
+  <a class="pixel-button page-exit" href="cat.html">Back</a>
+  <a class="pixel-button pixel-next page-exit" href="index.html">Home</a>
+
+</div>
+
+<div class="sparkle"></div>
+<div class="heart-container"></div>
+
+<script src="effects.js"></script>
+
+</body>
+</html>

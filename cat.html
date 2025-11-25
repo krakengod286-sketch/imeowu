@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Cat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pixel-body crt-screen page-shake">
+
+<div class="pixel-container fade-in">
+
+  <h1 class="pixel-title rainbow-text rainbow-glow">THIS IS US [click and drag the cars]</h1>
+  
+
+  
+
+    <img src="car.gif" class="cat">
+  </div>
+
+  <div class="speech-bubble">
+    <p id="typewriter"></p>
+  </div>
+
+  <script>
+    const text = "I LOVE YOU SM❤️";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typewriter").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 70);
+      }
+    }
+    typeWriter();
+  </script>
+
+  <a class="pixel-button page-exit" href="index.html">Back</a>
+  <a class="pixel-button pixel-next page-exit" href="letter.html">Next ➜</a>
+
+</div>
+
+<div class="sparkle"></div>
+<div class="heart-container"></div>
+
+<script src="effects.js"></script>
+
+</body>
+</html>
